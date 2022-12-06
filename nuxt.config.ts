@@ -4,5 +4,8 @@ export default defineNuxtConfig({
         preset: 'node',
       },
       // buildModules: ['@nuxtjs/tailwindcss'], // <= コメントアウト
-      css: ['@/assets/styles/tailwind.css'],
+      css: [
+              '@/assets/styles/tailwind.css',
+              '@/assets/styles/main.scss'
+            ],
 })
