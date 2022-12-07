@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     nitro: {
         preset: 'node',
       },
+      modules: ['@nuxtjs/tailwindcss'],
       // buildModules: ['@nuxtjs/tailwindcss'], // <= コメントアウト
       css: [
               '@/assets/styles/tailwind.css',

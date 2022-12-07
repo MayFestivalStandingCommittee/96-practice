@@ -1,5 +1,5 @@
 {
-    "main-dark": "#0b1f2f",
-    "main-dull": "#637ba3",
-    "main-soft": "#abc5dd"
+    "dark": "#0b1f2f",
+    "dull": "#637ba3",
+    "soft": "#abc5dd"
 }

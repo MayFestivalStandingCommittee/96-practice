@@ -1,12 +1,9 @@
 <template>
-    <div
-        v-for="i in 10"
-        :key="i"
-        class="a"
-    >
-        <p>あ</p>
+    <div class="bg-soft">
+        <div class="w-screen h-20">
+        </div>
     </div>
 </template>
 <script setup lang="ts">
-const isDisplay = ref(true)
+
 </script>
