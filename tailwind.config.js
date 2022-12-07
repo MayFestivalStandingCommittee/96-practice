@@ -1,7 +1,7 @@
-const themeColors = require('./lib/color')
+const themeColors = require("./lib/color");
 module.exports = {
   content: [
-    "./app.vue", 
+    "./app.vue",
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -10,12 +10,9 @@ module.exports = {
   theme: {
     extend: {
       colors: themeColors
-    },
+    }
   },
-  plugins: [
-
-  ]
-  
-}
+  plugins: []
+};
 
 //わざわざstyleタグまでいかなくてもどのcssが聞いてるのかが一目でわかる。のでtailwindいれた
