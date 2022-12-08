@@ -44,7 +44,17 @@ module.exports = {
     // インデントについては、通常はtsのルールを優先する
     indent: "off",
     "@typescript-eslint/indent": ["error", 2],
-    "vue/html-indent": ["error", 2],
+    "vue/html-indent": [
+      "error",
+      type,
+      {
+        attribute: 1,
+        baseIndent: 0,
+        closeBracket: 0,
+        alignAttributesVertically: false,
+        ignore: []
+      }
+    ],
     // async関数でawaitを必ずしも要求しない(ただただpromiseにしたい場合があるため)
     "require-await": "off",
     "vue/max-attributes-per-line": [
@@ -58,6 +68,8 @@ module.exports = {
     "vue/attribute-hyphenation": ["off"],
     "vue/custom-event-name-casing": ["off"],
     "vue/multi-word-component-names": ["off"],
+    "vue/no-useless-template-attributes": ["off"],
+    "vue/require-v-for-key": ["off"],
     "vue/html-closing-bracket-newline": [
       "error",
       {
