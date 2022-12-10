@@ -1,4 +1,4 @@
-const themeColors = require("./lib/color");
+const themeColors = require("./src/lib/color");
 module.exports = {
   content: [
     "./app.vue",
