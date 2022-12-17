@@ -1,2 +1,2 @@
-@use "media_query.scss" as *;
-@use "common.scss" as *;
+@forward "media_query.scss";
+@forward "common.scss";
