@@ -9,15 +9,12 @@ export default defineNuxtConfig({
   },
   modules: ["@nuxtjs/tailwindcss"],
   // buildModules: ['@nuxtjs/tailwindcss'], // <= コメントアウト
-  css: ["@/assets/styles/tailwind.css", "@/assets/styles/main.scss"],
+  css: ["@/assets/styles/tailwind.css"],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: [
-            '@import "@/assets/styles/common.scss";',
-            '@import "@/assets/media_query.scss";'
-        ]
+          additionalData: ['@use "@/assets/styles/main.scss" as *;']
         },
       },
     },
