@@ -5,12 +5,21 @@ git flowとはブランチの分岐モデルのことであり、それそれの
 一般的には、ブランチの種類は5種類ある。
 
 - master
+
 プロダクトとしてリリースする用のブランチ
+
 - release
+
 プロダクトのリリースの準備をするブランチ。
+
 - develop
+
 開発用ブランチ。releaseへマージする。
+
 - feature
+
 機能の追加を行うブランチ。developから分岐して、developにマージ。
+
 - hotfixes
+
 リリース後の緊急対応を行うブランチ。masterから分岐して、masterとdevelopにマージする。
